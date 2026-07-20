@@ -1,0 +1,31 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+
+# Environments
+.venv/
+venv/
+.env
+
+# Generated / synthetic data (must be regenerated from the seeded generator, never committed)
+data/generated/
+*.parquet
+*.duckdb
+
+# Tooling caches
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Build artifacts
+dist/
+build/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
