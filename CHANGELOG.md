@@ -15,3 +15,7 @@ grouped by phase branch.
 ### commit 2 — chore: pre-commit hooks
 - Added `.pre-commit-config.yaml` to wire up `ruff`, `black`, and `mypy` to mirror CI.
 - Configured hooks for trailing whitespace, end-of-file fixer, yaml checks, and large files.
+
+### commit 3 — ci: GitHub Actions skeleton
+- Added `.github/workflows/ci.yml` for CI on push/PR to `main`.
+- Configured steps for checkout, python setup, dependency installation (`pip install -e .[dev]`), and running `black`, `ruff`, `mypy`, and `pytest`.
