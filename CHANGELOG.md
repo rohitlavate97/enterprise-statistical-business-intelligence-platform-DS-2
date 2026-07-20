@@ -23,3 +23,7 @@ grouped by phase branch.
 ### commit 4 — chore: Dockerfile + docker-compose.yml
 - Added `Dockerfile` based on `python:3.12-slim` to provide a reproducible runtime/dev environment.
 - Added `docker-compose.yml` to mount the local workspace, expose standard ports (8000, 8050), and run tests by default.
+
+### commit 5 — docs: README + branching convention + CHANGELOG.md init
+- Overhauled `README.md` to document the strict `phase-*` branching model and provide Docker setup instructions.
+- Formally completed Phase 1 (Project Setup).
