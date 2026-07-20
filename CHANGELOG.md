@@ -19,3 +19,7 @@ grouped by phase branch.
 ### commit 3 — ci: GitHub Actions skeleton
 - Added `.github/workflows/ci.yml` for CI on push/PR to `main`.
 - Configured steps for checkout, python setup, dependency installation (`pip install -e .[dev]`), and running `black`, `ruff`, `mypy`, and `pytest`.
+
+### commit 4 — chore: Dockerfile + docker-compose.yml
+- Added `Dockerfile` based on `python:3.12-slim` to provide a reproducible runtime/dev environment.
+- Added `docker-compose.yml` to mount the local workspace, expose standard ports (8000, 8050), and run tests by default.

@@ -1,0 +1,15 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: statistical-bi-platform:latest
+    container_name: statistical-bi-platform-dev
+    volumes:
+      - .:/app
+    ports:
+      - "8050:8050"
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: pytest tests/
