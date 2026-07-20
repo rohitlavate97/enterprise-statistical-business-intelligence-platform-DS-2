@@ -11,3 +11,7 @@ grouped by phase branch.
 - Added `.gitignore` excluding generated datasets, `.env`, virtual environments, and build artifacts.
 - Added `docs/architecture.md` describing the directory layout.
 - Added `tests/test_project_structure.py` as a scaffolding smoke test.
+
+### commit 2 — chore: pre-commit hooks
+- Added `.pre-commit-config.yaml` to wire up `ruff`, `black`, and `mypy` to mirror CI.
+- Configured hooks for trailing whitespace, end-of-file fixer, yaml checks, and large files.
